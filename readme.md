@@ -1,43 +1,46 @@
-BipTheGuy
+# BipTheGuy
 
 BipTheGuy is a fun SwiftUI application where users can animate an image and play a sound effect when they tap on the image. Additionally, users can select a new image from their photo library to replace the default image.
 
-Features
+## Features
 
-Tap Animation: Tap the image to see a quick animation and play a sound effect.
-Photo Picker: Select a new image from the photo library to replace the default image.
-Screenshots
+- **Tap Animation**: Tap the image to see a quick animation and play a sound effect.
+- **Photo Picker**: Select a new image from the photo library to replace the default image.
 
+## Screenshots
 
+![BipTheGuy](screenshots/demo.gif)
 
-Requirements
+## Requirements
 
-iOS 15.0+
-Xcode 13.0+
-SwiftUI
-Installation
+- iOS 15.0+
+- Xcode 13.0+
+- SwiftUI
 
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/dobson980/BipTheGuy.git
-Open the project in Xcode:
-bash
-Copy code
-cd BipTheGuy
-open BipTheGuy.xcodeproj
-Usage
+## Installation
 
-Main View
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/dobson980/BipTheGuy.git
+   ```
+
+2. Open the project in Xcode:
+   ```bash
+   cd BipTheGuy
+   open BipTheGuy.xcodeproj
+   ```
+
+##Usage
+
+###Main View
 The ContentView is the main view of the app where users can interact with the image and choose a new image from the photo library.
 
-Code Overview
+##Code Overview
 
-BipTheGuyApp
+###BipTheGuyApp
 BipTheGuyApp is the entry point of the app.
 
-swift
-Copy code
+```Swift
 import SwiftUI
 
 @main
@@ -48,11 +51,11 @@ struct BipTheGuyApp: App {
         }
     }
 }
-ContentView
-ContentView sets up the main view with an animated image that plays a sound on tap and a photo picker button.
+```
 
-swift
-Copy code
+###ContentView
+ContentView sets up the main view with an animated image that plays a sound on tap and a photo picker button.
+```Swift
 import SwiftUI
 import AVFAudio
 import PhotosUI
@@ -94,6 +97,7 @@ struct ContentView: View {
                     }
                 }
             }
+
         }
         .padding()
     }
@@ -116,8 +120,8 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-License
+```
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+##License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-This README provides an overview of your BipTheGuy app, detailing its features, installation instructions, and a brief code overview to help users understand the structure and functionality of your app.
