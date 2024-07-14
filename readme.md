@@ -30,14 +30,14 @@ BipTheGuy is a fun SwiftUI application where users can animate an image and play
    open BipTheGuy.xcodeproj
    ```
 
-##Usage
+## Usage
 
-###Main View
+### Main View
 The ContentView is the main view of the app where users can interact with the image and choose a new image from the photo library.
 
-##Code Overview
+## Code Overview
 
-###BipTheGuyApp
+### BipTheGuyApp
 BipTheGuyApp is the entry point of the app.
 
 ```Swift
@@ -53,7 +53,7 @@ struct BipTheGuyApp: App {
 }
 ```
 
-###ContentView
+### ContentView
 ContentView sets up the main view with an animated image that plays a sound on tap and a photo picker button.
 ```Swift
 import SwiftUI
@@ -122,6 +122,6 @@ struct ContentView: View {
 }
 ```
 
-##License
+## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
